@@ -14,7 +14,10 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
     local PlayerSection = Player:NewSection("Player")
 
     PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+      while true do
+        wait(1)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+      end
     end)
 
     PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
