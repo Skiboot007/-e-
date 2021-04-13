@@ -1,6 +1,6 @@
 -- Instances:
 
-local password = loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/ffe024026ef895a1ab9c99c5e2de261bed1e3f45/password.txt?token=APNCZKKZXXI3FTZCJ7PH3XLAOWK5U"))
+local code223 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/ffe024026ef895a1ab9c99c5e2de261bed1e3f45/password.txt?token=APNCZKKZXXI3FTZCJ7PH3XLAOWK5U"))
 local login = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local side4 = Instance.new("Frame")
@@ -159,7 +159,7 @@ X.MouseButton1Down:connect(function()
 end)
 
 Attach.MouseButton1Down:connect(function()
-    if password.Text == "test" then
+    if password.Text == code223 then
         login.Enabled = false
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/main/(e).luau"))()
     end
