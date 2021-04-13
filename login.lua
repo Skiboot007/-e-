@@ -168,6 +168,8 @@ end)
 Attach.MouseButton1Down:connect(function()
     if password.Text == "test" then
         login.Enabled = false
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/main/(e).luau"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/main/(e).luau"))()     
+       else
+      game.Players.LocalPlayer:Kick("Rong Key") 
     end
 end)
