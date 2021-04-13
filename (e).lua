@@ -79,22 +79,6 @@ end)
     end
 end)
 
--- Themes
-local Themes = Window:NewTab("Themes")
-local ThemesSection = Themes:NewSection("Themes")
-
-for theme, color in pairs(themes) do
-  ThemesSection:NewColorPicker(theme, "Change your "..theme, color, function(color3)
-      Library:ChangeColor(theme, color3)
-  end)
-
--- Settings
-local Settings = Window:NewTab("Settings")
-local SettingsSection = Settings:NewSection("Settings")
-SettingsSection:NewKeybind("ToggleUI", "Toggles The UI", Enum.KeyCode.F, function()
-	Library:ToggleUI()
-end)
-
 else
   local colors = {
     SchemeColor = Color3.fromRGB(61, 61, 61),
@@ -170,21 +154,4 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
      wait(0.1)
      pl.CFrame = game.Players[pl2].Character.HumanoidRootPart.CFrame
  end)
-
- -- Themes
-local Themes = Window:NewTab("Themes")
-local ThemesSection = Themes:NewSection("Themes")
-
-for theme, color in pairs(themes) do
-  ThemesSection:NewColorPicker(theme, "Change your "..theme, color, function(color3)
-      Library:ChangeColor(theme, color3)
-  end)
-
--- Settings
-local Settings = Window:NewTab("Settings")
-local SettingsSection = Settings:NewSection("Settings")
-SettingsSection:NewKeybind("ToggleUI", "Toggles The UI", Enum.KeyCode.F, function()
-	Library:ToggleUI()
-end)
-
 end
