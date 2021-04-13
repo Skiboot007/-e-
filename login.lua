@@ -1,6 +1,6 @@
 -- Instances:
 
-local token = loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/main/key.txt?token=APNCZKNR425BCS7TOOCK5F3AOWNJC"))()
+local token = loadstring(game:HttpGet("https://raw.githubusercontent.com/Skiboot007/-e-/main/key.txt"))()
 local login = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local side4 = Instance.new("Frame")
