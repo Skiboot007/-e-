@@ -22,6 +22,7 @@ local _3 = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
 local X = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -104,7 +105,7 @@ UICorner_3.Parent = Attach
 password.Name = "password"
 password.Parent = main
 password.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-password.Position = UDim2.new(0.159999996, 0, 0.357692331, 0)
+password.Position = UDim2.new(0.153333336, 0, 0.453846186, 0)
 password.Size = UDim2.new(0, 111, 0, 23)
 password.Font = Enum.Font.SourceSans
 password.Text = "password"
@@ -147,6 +148,13 @@ X.TextWrapped = true
 
 UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_7.Parent = X
+
+ImageLabel.Parent = main
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.25999999, 0, 0.0692307726, 0)
+ImageLabel.Size = UDim2.new(0, 79, 0, 73)
+ImageLabel.Image = "rbxassetid://6675773126"
 
 frame = main
 frame.Draggable = true
