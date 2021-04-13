@@ -91,10 +91,9 @@ for theme, color in pairs(themes) do
 -- Settings
 local Settings = Window:NewTab("Settings")
 local SettingsSection = Settings:NewSection("Settings")
-SettingsSection:NewKeybind("ToggleUI", "Toggles The UI", Enum.KeyCode.P, function()
+SettingsSection:NewKeybind("ToggleUI", "Toggles The UI", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-end
 
 else
   local colors = {
@@ -184,9 +183,8 @@ for theme, color in pairs(themes) do
 -- Settings
 local Settings = Window:NewTab("Settings")
 local SettingsSection = Settings:NewSection("Settings")
-SettingsSection:NewKeybind("ToggleUI", "Toggles The UI", Enum.KeyCode.P, function()
+SettingsSection:NewKeybind("ToggleUI", "Toggles The UI", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-end
 
 end
