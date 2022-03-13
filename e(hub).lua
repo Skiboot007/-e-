@@ -107,6 +107,20 @@ if game.PlaceId == 4620170611 then
             wait(0.3)
         end
     end)
+    s1:addToggle("Give Pizza", false, function(value)
+        if value == true then
+            G4 = true
+        else
+            G4 = false
+        end
+        while G4 == true do
+            local args = {
+                [1] = "Pizza1"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+            wait(0.3)
+        end
+    end)
 elseif game.PlaceId == 155615604 then
     local venyx = library.new("E(hub) Prison Life", 5013109572)
     local p1 = venyx:addPage("Main", 5012544693)
