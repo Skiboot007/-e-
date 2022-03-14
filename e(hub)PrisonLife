@@ -30,3 +30,10 @@ local venyx = library.new("E(hub) Prison Life", 5013109572)
                 [1] = workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP
             }
             workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+        else
+            local args = {
+                [1] = workspace.Prison_ITEMS.giver:FindFirstChild("M9").ITEMPICKUP
+            }
+            workspace.Remote.ItemHandler:InvokeServer(unpack(args)) 
+        end
+    end)
