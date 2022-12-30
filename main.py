@@ -9,8 +9,8 @@ for i in os.listdir():
     if i.startswith('WiFi-') and i.endswith('.xml'):
         with open(i,'r') as n:
             templist=[]
-            for line in n.readlines():
-                if 'name' in line:
+            for i in n.readlines():
+                if 'name' in i:
                     if g==0:
                         striped=i.strip()
                         front=striped[6:]
@@ -19,7 +19,7 @@ for i in os.listdir():
                         g=1
                     elif g==1:
                         continue
-                if 'keyMaterial' in line:
+                if 'keyMaterial' in i:
                     striped=i.strip()
                     front=striped[13:]
                     back=front[:-14]
