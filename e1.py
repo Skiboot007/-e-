@@ -1,2 +1,4 @@
-print("e")
-input()
+import time
+while True:
+  print("e")
+  time.sleep(10)
